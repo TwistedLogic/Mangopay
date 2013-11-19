@@ -10,7 +10,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "laurentbrieu/mangopayapi": "dev-master"
+        "laurentbrieu/mangopay": "dev-master"
     }
 }
 ```
@@ -19,6 +19,16 @@ And run composer to update your dependencies:
 
     $ curl -s http://getcomposer.org/installer | php
     $ php composer.phar update
+
+## Usage
+
+To use the class, simply enter the code below : 
+
+```php
+use MangoPay\MangoPay;
+
+$mangoPay = new MangoPay();
+```
 
 ## Feedback
 
