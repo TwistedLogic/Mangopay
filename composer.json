@@ -1,9 +1,9 @@
 {
-    "name": "laurentbrieu/mangopayapi",
+    "name": "laurentbrieu/mangopay",
     "type": "library",
     "description": "Composer wrapper for Mangopay v2 PHP library",
     "keywords": ["mangopay", "payment", "api"],
-    "homepage": "https://github.com/LaurentBrieu/MangopayApi",
+    "homepage": "https://github.com/LaurentBrieu/Mangopay",
     "license": "MIT",
     "authors": [
         {
