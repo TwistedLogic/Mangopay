@@ -8,7 +8,7 @@ require_once __DIR__ . '/common/common.inc';
  * Provides managers to connect, send and read data from MangoPay API
  * as well as holds configuration/authorization data.
  */
-class MangoPayApi {
+class MangoPay {
     
     /////////////////////////////////////////////////
     // Config/authorization related props
