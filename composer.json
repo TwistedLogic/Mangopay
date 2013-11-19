@@ -1,5 +1,5 @@
 {
-    "name": "laurentbrieu/mangopay",
+    "name": "laurentbrieu/mangopayapi",
     "type": "library",
     "description": "Composer wrapper for Mangopay v2 PHP library",
     "keywords": ["mangopay", "payment", "api"],
