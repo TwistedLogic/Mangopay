@@ -1,6 +1,6 @@
 <?php
 
-namespace MangoPay;
+namespace MangoPayApi;
 
 require_once __DIR__ . '/common/common.inc';
 
