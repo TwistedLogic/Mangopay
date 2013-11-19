@@ -20,17 +20,6 @@ And run composer to update your dependencies:
     $ curl -s http://getcomposer.org/installer | php
     $ php composer.phar update
 
-## Usage
-
-To use the class, simply enter the code below : 
-
-```php
-<?php
-use MangoPay\MangoPay;
-
-$mangoPay = new MangoPay();
-```
-
 ## Feedback
 
 **Please provide feedback!** We want to make this library useful in as many projects as possible.
