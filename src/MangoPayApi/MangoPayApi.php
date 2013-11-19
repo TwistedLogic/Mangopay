@@ -1,5 +1,7 @@
 <?php
+
 namespace MangoPay;
+
 require_once __DIR__ . '/common/common.inc';
 
 /**
