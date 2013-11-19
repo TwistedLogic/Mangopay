@@ -25,6 +25,7 @@ And run composer to update your dependencies:
 To use the class, simply enter the code below : 
 
 ```php
+<?php
 use MangoPay\MangoPay;
 
 $mangoPay = new MangoPay();
