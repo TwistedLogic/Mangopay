@@ -89,6 +89,12 @@ class MangoPay {
      * @var ApiCards 
      */
     public $Cards;
+    
+    /**
+     * Events methods
+     * @var ApiEvents 
+     */
+    public $Events;
 
     /**
      * Constructor
@@ -110,5 +116,6 @@ class MangoPay {
         $this->Refunds = new ApiRefunds($this);
         $this->CardRegistrations = new ApiCardRegistrations($this);
         $this->Cards = new ApiCards($this);
+        $this->Events = new ApiEvents($this);
     }
 }
