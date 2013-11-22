@@ -10,7 +10,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "laurentbrieu/mangopayapi": "dev-master"
+        "laurentbrieu/mangopay": "dev-master"
     }
 }
 ```
