@@ -6,6 +6,8 @@ namespace MangoPay;
  */
 class BankAccountDetailsCA extends Dto implements BankAccountDetails {
     
+    /**class BankAccountDetailsCA extends Dto implements BankAccountDetails {
+    
     /**
      * Bank name
      * @var string 
