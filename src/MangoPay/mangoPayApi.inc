@@ -1,5 +1,4 @@
 <?php
-
 namespace MangoPay;
 require_once __DIR__ . '/common/common.inc';
 
@@ -8,18 +7,18 @@ require_once __DIR__ . '/common/common.inc';
  * Provides managers to connect, send and read data from MangoPay API
  * as well as holds configuration/authorization data.
  */
-class MangoPay {
-
+class MangoPayApi {
+    
     /////////////////////////////////////////////////
     // Config/authorization related props
     /////////////////////////////////////////////////
-    
+
     /**
      * Authorization token methods
      * @var \MangoPay\AuthorizationTokenManager
      */
     public $OAuthTokenManager;
-    
+
     /**
      * Configuration instance
      * @var \MangoPay\Configuration
@@ -29,22 +28,22 @@ class MangoPay {
     /////////////////////////////////////////////////
     // API managers props
     /////////////////////////////////////////////////
-    
+
     /**
      * OAuth methods
      * @var ApiOAuth
      */
     public $AuthenticationManager;
-    
+
     /**
      * Clients methods
-     * @var Client
+     * @var Client 
      */
     public $Clients;
     
     /**
      * Users methods
-     * @var ApiUsers
+     * @var ApiUsers 
      */
     public $Users;
     
@@ -53,7 +52,7 @@ class MangoPay {
      * @var ApiWallets
      */
     public $Wallets;
-    
+        
     /**
      * Transfers methods
      * @var ApiTransfers
@@ -62,61 +61,61 @@ class MangoPay {
     
     /**
      * Pay-in methods
-     * @var ApiPayIns
+     * @var ApiPayIns 
      */
     public $PayIns;
     
     /**
      * Pay-out methods
-     * @var ApiPayOuts
+     * @var ApiPayOuts 
      */
     public $PayOuts;
-    
+        
     /**
      * Refund methods
-     * @var ApiRefunds
+     * @var ApiRefunds 
      */
     public $Refunds;
-    
+        
     /**
      * Card registration methods
-     * @var ApiCardRegistrations
+     * @var ApiCardRegistrations 
      */
-    public $CardRegistrations;
-    
+    public $CardRegistrations; 
+        
     /**
      * Pre-authorization methods
-     * @var ApiCardPreAuthorization
+     * @var ApiCardPreAuthorization 
      */
     public $CardPreAuthorizations;
-    
+        
     /**
      * Card methods
-     * @var ApiCards
+     * @var ApiCards 
      */
     public $Cards;
     
     /**
      * Events methods
-     * @var ApiEvents
+     * @var ApiEvents 
      */
     public $Events;
     
     /**
      * Hooks methods
-     * @var ApiHooks
+     * @var ApiHooks 
      */
     public $Hooks;
-    
+
     /**
      * Constructor
      */
     function __construct() {
-    
+
         // default config setup
         $this->Config = new Configuration();
         $this->OAuthTokenManager = new AuthorizationTokenManager($this);
-    
+        
         // API managers
         $this->AuthenticationManager = new ApiOAuth($this);
         $this->Clients = new ApiClients($this);
